@@ -21,9 +21,9 @@ flags = win32evtlog.EVENTLOG_FORWARDS_READ | win32evtlog.EVENTLOG_SEQUENTIAL_REA
 sec_records = []                                                                  # skapa en lista för att lagra loggar
 
 # --Email config-- #
-sender_email = "mailscriptcs25@gmail.com"
-receiver_mail = "mailscriptcs25@gmail.com"
-password = "yjyq gzvx kchm lobj"
+sender_email = ""
+receiver_mail = ""
+password = ""
 
 # --Main code-- #
 
