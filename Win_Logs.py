@@ -23,7 +23,20 @@ sec_records = []                                                                
 # --Email config-- #
 sender_email = "mailscriptcs25@gmail.com"
 receiver_mail = "mailscriptcs25@gmail.com"
-password = "yjyq gzvx kchm lobj"
+password = "aukt xlfu bbgc apgj"
+
+# --Email Function-- #
+def mail_func():
+    message = MIMEMultipart()
+    message["From"] = sender_email
+    message["To"] = receiver_mail
+    message["Subject"] = subject
+    message.attach(MIMEText(body, "plain"))
+    with smtplib.SMTP("smtp.gmail.com", 587) as server:
+        server.starttls()
+        server.login(sender_email, password)  
+        server.send_message(message)
+    
 
 # --Main code-- #
 
@@ -42,15 +55,7 @@ for event,group in groupby(evt_id):
             # --Create Email Content-- #
             subject = "Event ID : 4625 Multiple Failed logon attempts! *HIGH*"
             body =  "Irregular activity has been detected investigate promptly!"
-            message = MIMEMultipart()
-            message["From"] = sender_email
-            message["To"] = receiver_mail
-            message["Subject"] = subject
-            message.attach(MIMEText(body, "plain"))
-            with smtplib.SMTP("smtp.gmail.com", 587) as server:
-                server.starttls()
-                server.login(sender_email, password)  
-                server.send_message(message)
+            mail_func()
 
     elif event == 4720:
         fail_log = sum(1 for _ in group)
@@ -58,15 +63,8 @@ for event,group in groupby(evt_id):
             # --Create Email Content-- #
             subject = "Event ID : 4720 New Account Has Been Created! *MED*"
             body =  "Irregular activity has been detected investigate!"
-            message = MIMEMultipart()
-            message["From"] = sender_email
-            message["To"] = receiver_mail
-            message["Subject"] = subject
-            message.attach(MIMEText(body, "plain"))
-            with smtplib.SMTP("smtp.gmail.com", 587) as server:
-                server.starttls()
-                server.login(sender_email, password)  
-                server.send_message(message)
+            mail_func()
+
 
 
             
