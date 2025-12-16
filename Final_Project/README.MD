@@ -2,7 +2,7 @@
 
 
 
-A Python script that monitors Windows Security Event Logs and sends email alerts when suspicious activity is detected.
+A Python script that scans Windows Security Event Logs and sends email alerts when suspicious activity is detected.
 
 
 
@@ -10,7 +10,6 @@ A Python script that monitors Windows Security Event Logs and sends email alerts
 
 
 
-\- Monitors Windows Security logs in real-time
 
 \- Detects failed login attempts (brute-force attacks)
 
