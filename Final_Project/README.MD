@@ -26,17 +26,16 @@ A Python script that monitors Windows Security Event Logs and sends email alerts
 
 
 
-\- \*\*Operating System\*\*: Windows
+\- Operating System: Windows
 
-\- \*\*Python\*\*: 3.x
+\- Python: 3.x
 
-\- \*\*Privileges\*\*: Administrator rights required
+\- Privileges: Administrator rights required
 
-\- \*\*Dependencies\*\*: 
+\- Dependencies 
 
-&nbsp; - `pywin32`
-
-&nbsp; - `smtplib` (standard library)
+ - pywin32`
+ - smtplib` (standard library)
 
 
 
@@ -45,22 +44,16 @@ A Python script that monitors Windows Security Event Logs and sends email alerts
 
 
 1\. Clone the repository:
-
-&nbsp;	
+	
 
 git clone https://github.com/yourusername/win-security-log-scanner.git
 
 cd win-security-log-scanner
 
 
-
 2\. Install required dependencies:
 
-
-
 pip install pywin32
-
-
 
 
 
@@ -73,7 +66,6 @@ sender\_email = "your-email@gmail.com"
 receiver\_mail = "recipient@example.com"
 
 password = "your-app-password"
-
 
 
 
@@ -92,21 +84,21 @@ For Gmail, you'll need to use an \*\*App Password\*\* instead of your regular pa
 
 
 
-\## 💻 Usage
+\##  Usage
 
 
 
-1\. \*\*Run as Administrator\*\*:
+1\. Run as Administrator:
 
-&nbsp;  - Right-click Command Prompt
+  - Right-click Command Prompt
 
-&nbsp;  - Select "Run as administrator"
+  - Select "Run as administrator"
 
-&nbsp;  - Navigate to script directory
+  - Navigate to script directory
 
 
 
-2\. \*\*Execute the script\*\*:
+2\. Execute the script:
 
 
 
@@ -116,13 +108,13 @@ python win\_logs.py
 
 
 
-3\. \*\*Select from menu\*\*:
+3\. Select from menu:
 
-&nbsp;  - `1` - Security log scan
+  - `1` - Security log scan
 
-&nbsp;  - `2` - Help page
+  - `2` - Help page
 
-&nbsp;  - `3` - Quit
+  - `3` - Quit
 
 
 
@@ -160,7 +152,7 @@ When suspicious activity is detected, the script automatically sends an email al
 
 
 
-\- \*\*Never commit credentials\*\* to version control
+\- Never commit credentials to version control
 
 \- Consider using environment variables for sensitive data
 

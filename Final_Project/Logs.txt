@@ -1,4 +1,3 @@
-
 [2025-12-16 09:38:29] Incorrect menu choice
 [2025-12-16 09:38:29] Accesed script version
 [2025-12-16 09:38:29] Script was terminated
@@ -42,3 +41,60 @@
 [2025-12-16 10:35:24] User accessed help page
 [2025-12-16 10:35:24] Menu Option written: 1
 [2025-12-16 10:35:24] Error 999: Script was run without Admin priviledges
+[2025-12-16 13:27:30] Script was Initialized
+[2025-12-16 13:27:30] Menu Option written: 2
+[2025-12-16 13:27:30] User accessed help page
+[2025-12-16 13:27:30] Menu Option written: 2
+[2025-12-16 13:27:30] User accessed help page
+[2025-12-16 13:27:30] Menu Option written: 3
+[2025-12-16 13:27:30] User accesed script version
+[2025-12-16 13:27:30] Menu Option written: hello
+[2025-12-16 13:27:30] Incorrect menu choice
+[2025-12-16 13:27:30] Menu Option written: 3
+[2025-12-16 13:27:30] User accesed script version
+[2025-12-16 13:27:30] Menu Option written: 4
+[2025-12-16 13:27:30] User terminated script
+[2025-12-16 13:29:33] Script was Initialized
+[2025-12-16 13:29:33] Menu Option written: 1
+[2025-12-16 13:29:33] Error 999: Script was run without Admin priviledges
+[2025-12-16 13:31:48] Script was Initialized
+[2025-12-16 13:31:48] Menu Option written: gesdf
+[2025-12-16 13:31:48] Incorrect menu choice
+[2025-12-16 13:31:48] Menu Option written: fdsf
+[2025-12-16 13:31:48] Incorrect menu choice
+[2025-12-16 13:31:48] Menu Option written: dsa
+[2025-12-16 13:31:48] Incorrect menu choice
+[2025-12-16 13:31:48] Menu Option written: das
+[2025-12-16 13:31:48] Incorrect menu choice
+[2025-12-16 13:31:48] Menu Option written: 324
+[2025-12-16 13:31:48] Incorrect menu choice
+[2025-12-16 13:31:48] Menu Option written: 42
+[2025-12-16 13:31:48] Incorrect menu choice
+[2025-12-16 13:31:48] Menu Option written: 536
+[2025-12-16 13:31:48] Incorrect menu choice
+[2025-12-16 13:31:48] Menu Option written: 
+[2025-12-16 13:31:48] Incorrect menu choice
+[2025-12-16 13:35:20] Script was Initialized
+[2025-12-16 13:35:20] Menu Option written: 1
+[2025-12-16 13:35:20] Error 999: Script was run without Admin priviledges
+[2025-12-16 13:35:49] Script was Initialized
+[2025-12-16 13:35:49] Menu Option written: 1
+[2025-12-16 13:40:29] Script was Initialized
+[2025-12-16 13:40:29] Menu Option written: 1
+[2025-12-16 13:40:29] Error 999: Script was run without Admin priviledges
+[2025-12-16 13:40:40] Script was Initialized
+[2025-12-16 13:40:40] Menu Option written: 1
+[2025-12-16 13:40:40] Error 999: Script was run without Admin priviledges
+[2025-12-16 13:41:25] Script was Initialized
+[2025-12-16 13:41:25] Menu Option written: 2
+[2025-12-16 13:41:25] User accessed help page
+[2025-12-16 13:41:25] Menu Option written: 3
+[2025-12-16 13:41:25] User accesed script version
+[2025-12-16 13:41:25] Menu Option written: 1
+[2025-12-16 13:41:25] Error 999: Script was run without Admin priviledges
+[2025-12-16 13:42:07] Script was Initialized
+[2025-12-16 13:42:07] Menu Option written: 1
+[2025-12-16 13:42:07] Error 999: Script was run without Admin priviledges
+[2025-12-16 13:45:14] Script was Initialized
+[2025-12-16 13:45:14] Menu Option written: 1
+[2025-12-16 13:45:14] Error 999: Script was run without Admin priviledges
