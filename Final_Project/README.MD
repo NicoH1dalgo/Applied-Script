@@ -6,7 +6,7 @@ A Python script that monitors Windows Security Event Logs and sends email alerts
 
 
 
-\## 🔍 Features
+\##  Features
 
 
 
@@ -22,7 +22,7 @@ A Python script that monitors Windows Security Event Logs and sends email alerts
 
 
 
-\##📋 Prerequisites
+\## Prerequisites
 
 
 
