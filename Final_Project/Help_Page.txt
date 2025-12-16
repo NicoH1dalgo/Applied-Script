@@ -1,0 +1,42 @@
+WINDOWS SECURITY LOG SCANNER - HELP
+
+DESCRIPTION:
+Monitors Windows Security Event Logs and sends email alerts when suspicious activity is detected.
+
+REQUIREMENTS:
+Windows OS
+Administrator privileges
+pywin32 package installed (pip install pywin32)
+Gmail account configured for alerts
+
+CONFIGURATION:
+Before running, configure email settings in the script:
+sender_email = "your-email@gmail.com"
+receiver_mail = "recipient@example.com"  
+password = "your-app-password"
+
+MONITORED EVENTS:
+Event ID 4625 - Failed Logon Attempts
+
+Triggers alert after 5+ failed attempts
+Indicates possible brute-force attack
+
+Event ID 1102 - Audit Log Cleared
+
+Triggers alert immediately
+Often indicates attempt to hide malicious activity
+
+HOW IT WORKS:
+Opens Windows Security event log
+Reads all log entries sequentially
+Groups events by Event ID
+Counts occurrences of monitored events
+Sends email alert if thresholds exceeded
+
+USAGE:
+Run as Administrator, select option 1 to scan logs.
+TROUBLESHOOTING
+
+Not Administrator error: Run Command Prompt as Administrator
+Platform error: Script only works on Windows
+Email fails: Check Gmail credentials and enable App Passwords

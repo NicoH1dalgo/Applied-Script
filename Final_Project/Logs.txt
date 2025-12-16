@@ -1,0 +1,44 @@
+
+[2025-12-16 09:38:29] Incorrect menu choice
+[2025-12-16 09:38:29] Accesed script version
+[2025-12-16 09:38:29] Script was terminated
+[2025-12-16 09:39:22] Error 999: Script was run without Admin priviledges
+[2025-12-16 09:41:17] Error 999: Script was run without Admin priviledges
+[2025-12-16 09:41:21] Accesed help page
+[2025-12-16 09:41:21] Accesed script version
+[2025-12-16 09:41:21] Script was terminated
+[2025-12-16 10:23:42] Script was Initialized
+[2025-12-16 10:23:42] User accessed help page
+[2025-12-16 10:23:42] User accesed script version
+[2025-12-16 10:27:46] Script was Initialized
+[2025-12-16 10:27:46] Menu Option written: 2
+[2025-12-16 10:27:46] User accessed help page
+[2025-12-16 10:27:46] Menu Option written: 4
+[2025-12-16 10:27:46] User terminated script
+[2025-12-16 10:29:30] Script was Initialized
+[2025-12-16 10:29:30] Menu Option written: 2
+[2025-12-16 10:29:30] User accessed help page
+[2025-12-16 10:29:30] Menu Option written: 4
+[2025-12-16 10:29:30] User terminated script
+[2025-12-16 10:34:15] Script was Initialized
+[2025-12-16 10:34:15] Menu Option written: 2
+[2025-12-16 10:34:15] User accessed help page
+[2025-12-16 10:34:15] Menu Option written: 
+[2025-12-16 10:34:15] Incorrect menu choice
+[2025-12-16 10:34:15] Menu Option written: 4
+[2025-12-16 10:34:15] User terminated script
+[2025-12-16 10:34:42] Script was Initialized
+[2025-12-16 10:34:42] Menu Option written: 2
+[2025-12-16 10:34:42] User accessed help page
+[2025-12-16 10:34:42] Menu Option written: 4
+[2025-12-16 10:34:42] User terminated script
+[2025-12-16 10:34:57] Script was Initialized
+[2025-12-16 10:34:57] Menu Option written: 2
+[2025-12-16 10:34:57] User accessed help page
+[2025-12-16 10:34:57] Menu Option written: 4
+[2025-12-16 10:34:57] User terminated script
+[2025-12-16 10:35:24] Script was Initialized
+[2025-12-16 10:35:24] Menu Option written: 2
+[2025-12-16 10:35:24] User accessed help page
+[2025-12-16 10:35:24] Menu Option written: 1
+[2025-12-16 10:35:24] Error 999: Script was run without Admin priviledges
