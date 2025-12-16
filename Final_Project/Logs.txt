@@ -98,3 +98,43 @@
 [2025-12-16 13:45:14] Script was Initialized
 [2025-12-16 13:45:14] Menu Option written: 1
 [2025-12-16 13:45:14] Error 999: Script was run without Admin priviledges
+[2025-12-16 13:56:06] Script was Initialized
+[2025-12-16 13:56:06] Menu Option written: 1
+[2025-12-16 13:56:06] Error 999: Script was run without Admin priviledges
+[2025-12-16 14:06:16] Script was Initialized
+[2025-12-16 14:06:16] Menu Option written: 1
+[2025-12-16 14:06:16] Error 999: Script was run without Admin priviledges
+[2025-12-16 14:08:07] Script was Initialized
+[2025-12-16 14:08:07] Menu Option written: 1
+[2025-12-16 14:08:07] (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+[2025-12-16 14:14:12] Script was Initialized
+[2025-12-16 14:14:12] Menu Option written: 1
+[2025-12-16 14:17:13] Script was Initialized
+[2025-12-16 14:17:13] Menu Option written: 1
+[2025-12-16 14:25:27] Script was Initialized
+[2025-12-16 14:25:27] Menu Option written: 1
+[2025-12-16 14:49:25] Script was Initialized
+[2025-12-16 14:49:25] Menu Option written: 1
+[2025-12-16 14:49:25] (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 38308e7fff4ca-37fdedcf233sm37962801fa.39 - gsmtp')
+[2025-12-16 14:49:25] Menu Option written: 2
+[2025-12-16 14:49:25] User accessed help page
+[2025-12-16 14:49:25] Menu Option written: 3
+[2025-12-16 14:49:25] User accesed script version
+[2025-12-16 15:01:45] Script was Initialized
+[2025-12-16 15:01:45] Menu Option written: 1
+[2025-12-16 15:01:45] (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+[2025-12-16 15:46:41] Script was Initialized
+[2025-12-16 15:46:41] Menu Option written: 2
+[2025-12-16 15:46:41] User accessed help page
+[2025-12-16 15:46:41] Menu Option written: 3
+[2025-12-16 15:46:41] User accesed script version
+[2025-12-16 15:46:41] Menu Option written: 1
+[2025-12-16 15:47:57] Script was Initialized
+[2025-12-16 15:47:57] Menu Option written: 1
+[2025-12-16 15:48:15] Script was Initialized
+[2025-12-16 15:48:15] Menu Option written: 1
+[2025-12-16 15:50:57] Script was Initialized
+[2025-12-16 15:50:57] Menu Option written: 1
+[2025-12-16 15:51:51] Script was Initialized
+[2025-12-16 15:51:51] Menu Option written: 1
+[2025-12-16 15:51:51] (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 2adb3069b0e04-5990da11946sm946906e87.6 - gsmtp')
