@@ -27,9 +27,9 @@ today_date = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
 
             ## --Email config-- ##
 def mail_func():                                                                                            
-    sender_email = ""                                                                                       # Hårdkodad avsändar email adress 
-    receiver_mail = ""                                                                                      # Hårdkodad mottagar email adress
-    password = ""                                                                                           # Hårdkodad app-lösenord för avsändar email adress      
+    sender_email = "mailscriptcs25@gmail.com"                                                                                       # Hårdkodad avsändar email adress 
+    receiver_mail = "mailscriptcs25@gmail.com"                                                                                      # Hårdkodad mottagar email adress
+    password = "kbiu mlza jykt jdub"                                                                                           # Hårdkodad app-lösenord för avsändar email adress      
     message = MIMEMultipart()                                                                               #                                    
     message["From"] = sender_email                                                                          # sätter avsändare mail setting i headern                                      
     message["To"] = receiver_mail                                                                           # sätter Motager mail setting i headern                         
@@ -104,10 +104,10 @@ while True:
                             print(subject)
                             with open("Logs.txt", "a") as file:
                                 file.write(f"\n[{today_date}] Event ID {event}: alert was triggered")
-                    print("=" * 25 + " Scan complete " + 25 * "=")
-
+                
                 except Exception as error:
                     error_log()
+               
 
             # ------- Help Page --------- #
         elif menu_option == "2":

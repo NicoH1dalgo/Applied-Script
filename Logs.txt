@@ -1,0 +1,19 @@
+
+[2025-12-18 13:55:18] Script was Initialized
+[2025-12-18 13:55:18] Menu Option written: 1
+[2025-12-18 13:55:18] (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+[2025-12-18 13:55:42] Script was Initialized
+[2025-12-18 13:55:42] Menu Option written: 1
+[2025-12-18 13:56:14] Script was Initialized
+[2025-12-18 13:56:14] Menu Option written: 1
+[2025-12-18 13:56:14] (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 2adb3069b0e04-59a132cb43esm1073430e87.21 - gsmtp')
+[2025-12-18 13:57:06] Script was Initialized
+[2025-12-18 13:57:06] Menu Option written: 1
+[2025-12-18 13:58:44] Script was Initialized
+[2025-12-18 13:58:44] Menu Option written: 1
+[2025-12-18 13:58:56] Script was Initialized
+[2025-12-18 13:58:56] Menu Option written: 1
+[2025-12-18 13:58:56] Event ID 4625: alert was triggered
+[2025-12-18 13:58:56] Event ID 4625: alert was triggered
+[2025-12-18 13:58:56] Menu Option written: 4
+[2025-12-18 13:58:56] User terminated script
