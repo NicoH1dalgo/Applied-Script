@@ -19,9 +19,6 @@ from email.mime.text import MIMEText
 import sys
 from datetime import datetime
 
-
-
-
             # -------- Variable/Functions ---------- #
 today_date = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -40,8 +37,7 @@ def mail_func():
         server.login(sender_email, password)                                                                # Loggar in på avsändar email adressen              
         server.send_message(message)                                                                        # Skickar mailet till mottagaren             
 
-
-
+            ## --Error Logging-- ##
 def error_log():                                                                                            #
     print(error)                                                                                            # Skriver ut error meddelandet i console                                    
     with open("Logs.txt","a") as file:                                                                      # Öppnar loggfilen i append läge   
@@ -108,7 +104,6 @@ while True:
                 except Exception as error:
                     error_log()
                
-
             # ------- Help Page --------- #
         elif menu_option == "2":
             try:
@@ -147,13 +142,3 @@ while True:
         with open("Logs.txt","a") as file:
                 file.write(f"\n[{today_date}] Script was run on a {sys.platform} system")
         break
-        
-
-
-
-                
-            
-            
-
-                
-
