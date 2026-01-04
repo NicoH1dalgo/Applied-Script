@@ -17,3 +17,12 @@
 [2025-12-18 13:58:56] Event ID 4625: alert was triggered
 [2025-12-18 13:58:56] Menu Option written: 4
 [2025-12-18 13:58:56] User terminated script
+[2026-01-04 22:12:32] Script was Initialized
+[2026-01-04 22:12:32] Menu Option written: 3
+[2026-01-04 22:12:32] User accesed script version
+[2026-01-04 22:12:32] Menu Option written: 2
+[2026-01-04 22:12:32] [Errno 2] No such file or directory: 'Help_Page.txt'
+[2026-01-04 22:13:17] Script was Initialized
+[2026-01-04 22:13:17] Menu Option written: 2
+[2026-01-04 22:13:17] [Errno 2] No such file or directory: 'Help_Page.txt'
+[2026-01-04 22:21:33] Script was run on a win32 system

@@ -8,51 +8,56 @@
 #  ------------------------## Skriven av Nicolas.H ##--------------------------------- #
 # ==================================================================================== #
           
-         
-            # ------------- Imports ---------------- #
 
-from itertools import groupby
-import win32evtlog
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
-import sys
+            # ------------- OS Check --------------- #
 from datetime import datetime
+import sys
 
-            # -------- Variable/Functions ---------- #
+                # -------- Variable/Functions ---------- #
 today_date = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
 
-            ## --Email config-- ##
-def mail_func():                                                                                            
-    sender_email = "mailscriptcs25@gmail.com"                                                                                       # Hårdkodad avsändar email adress 
-    receiver_mail = "mailscriptcs25@gmail.com"                                                                                      # Hårdkodad mottagar email adress
-    password = "kbiu mlza jykt jdub"                                                                                           # Hårdkodad app-lösenord för avsändar email adress      
-    message = MIMEMultipart()                                                                               #                                    
-    message["From"] = sender_email                                                                          # sätter avsändare mail setting i headern                                      
-    message["To"] = receiver_mail                                                                           # sätter Motager mail setting i headern                         
-    message["Subject"] = subject                                                                            # sätter Subject mail setting i headern                    
-    message.attach(MIMEText(body, "plain"))                                                                 # Attachar body texten till mailet                 
-    with smtplib.SMTP("smtp.gmail.com", 587) as server:                                                     # Sätter upp SMTP server inställningar för gmail                      
-        server.starttls()                                                                                   # Kör TLS för säker anslutning                  
-        server.login(sender_email, password)                                                                # Loggar in på avsändar email adressen              
-        server.send_message(message)                                                                        # Skickar mailet till mottagaren             
-
-            ## --Error Logging-- ##
-def error_log():                                                                                            #
-    print(error)                                                                                            # Skriver ut error meddelandet i console                                    
-    with open("Logs.txt","a") as file:                                                                      # Öppnar loggfilen i append läge   
-        file.write(f"\n[{today_date}] {error}")                                                             # Loggar error meddelandet i loggfilen             
-    sys.exit() 
+if sys.platform == "win32":
 
 
-            # ------- Script Start Message --------- #
-print("=" * 25 + "Windows Security Log Scanner" + "=" * 25)
-with open("Logs.txt","a") as file:
-    file.write(f"\n[{today_date}] Script was Initialized")
+            # ------------- Imports ---------------- #
 
-            # ---------- Menu Creation ------------- #
-while True:
-    if sys.platform == "win32":                                                                             # Kollar om OS är Windows
+    from itertools import groupby
+    import win32evtlog
+    import smtplib
+    from email.mime.multipart import MIMEMultipart
+    from email.mime.text import MIMEText
+
+
+                ## --Email config-- ##
+    def mail_func():                                                                                            
+        sender_email = "mailscriptcs25@gmail.com"                                                               # Hårdkodad avsändar email adress 
+        receiver_mail = "mailscriptcs25@gmail.com"                                                              # Hårdkodad mottagar email adress
+        password = "kbiu mlza jykt jdub"                                                                        # Hårdkodad app-lösenord för avsändar email adress      
+        message = MIMEMultipart()                                                                               #                                    
+        message["From"] = sender_email                                                                          # sätter avsändare mail setting i headern                                      
+        message["To"] = receiver_mail                                                                           # sätter Motager mail setting i headern                         
+        message["Subject"] = subject                                                                            # sätter Subject mail setting i headern                    
+        message.attach(MIMEText(body, "plain"))                                                                 # Attachar body texten till mailet                 
+        with smtplib.SMTP("smtp.gmail.com", 587) as server:                                                     # Sätter upp SMTP server inställningar för gmail                      
+            server.starttls()                                                                                   # Kör TLS för säker anslutning                  
+            server.login(sender_email, password)                                                                # Loggar in på avsändar email adressen              
+            server.send_message(message)                                                                        # Skickar mailet till mottagaren             
+
+                ## --Error Logging-- ##
+    def error_log():                                                                                            #
+        print(error)                                                                                            # Skriver ut error meddelandet i console                                    
+        with open("Logs.txt","a") as file:                                                                      # Öppnar loggfilen i append läge   
+            file.write(f"\n[{today_date}] {error}")                                                             # Loggar error meddelandet i loggfilen             
+        sys.exit() 
+
+
+                # ------- Script Start Message --------- #
+    print("=" * 25 + "Windows Security Log Scanner" + "=" * 25)
+    with open("Logs.txt","a") as file:
+        file.write(f"\n[{today_date}] Script was Initialized")
+
+                # ---------- Menu Creation ------------- #
+    while True:                                                                             # Kollar om OS är Windows
         menu_option = input("What would you like to do today? \n1. Perform Security log scan\n2. Help page\n3. Version\n4. Quit\n") #   Tar in användarens menyval
         with open("Logs.txt", "a") as file:                                                                 # Öppnar loggfilen i append läge                                    
             file.write(f"\n[{today_date}] Menu Option written: {menu_option}")                              # Loggar användarens menyval i loggfilen               
@@ -103,7 +108,7 @@ while True:
                 
                 except Exception as error:
                     error_log()
-               
+                
             # ------- Help Page --------- #
         elif menu_option == "2":
             try:
@@ -135,10 +140,12 @@ while True:
             with open("Logs.txt","a") as file:
                 file.write(f"\n[{today_date}] Incorrect menu choice")
             continue
-            
-            # ------ Incorrect OS ------- #
-    else:
-        print("=" * 25 +"Operative system is not Windows" + 25 * "=")
-        with open("Logs.txt","a") as file:
-                file.write(f"\n[{today_date}] Script was run on a {sys.platform} system")
-        break
+                
+                # ------ Incorrect OS ------- #
+
+
+else:
+    print("=" * 25 +"Operative system is not Windows" + 25 * "=")
+    with open("Logs.txt","a") as file:
+            file.write(f"\n[{today_date}] Script was run on a {sys.platform} system")
+
