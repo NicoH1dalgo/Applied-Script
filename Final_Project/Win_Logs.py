@@ -150,3 +150,12 @@ else:
     with open("Logs.txt","a") as file:
             file.write(f"\n[{today_date}] Script was run on a {sys.platform} system")
 
+
+
+
+
+
+
+
+ # --------------- No oil here  ---------------------#
+
