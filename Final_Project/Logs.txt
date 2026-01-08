@@ -1,0 +1,11 @@
+
+[2025-12-17 08:38:42] Script was Initialized
+[2025-12-17 08:38:42] Menu Option written: 2
+[2025-12-17 08:38:42] User accessed help page
+[2025-12-17 08:38:42] Menu Option written: 3
+[2025-12-17 08:38:42] User accesed script version
+[2025-12-17 08:38:42] Menu Option written: 1
+[2025-12-17 08:38:42] (1314, 'OpenEventLogW', 'A required privilege is not held by the client.')
+[2025-12-17 08:39:40] Script was Initialized
+[2025-12-17 08:39:40] Menu Option written: 1
+[2025-12-17 08:39:40] (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 38308e7fff4ca-37fded762b5sm47243581fa.26 - gsmtp')

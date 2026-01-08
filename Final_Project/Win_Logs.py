@@ -2,20 +2,22 @@
 # --------------------------------- Win_logs.py -------------------------------------- #
 # ------------------------------------------------------------------------------------ #
 # --  Script för att läsa och filtrera windows säkerhetsloggar med hjälp av pywin32 -- #
-# -----  Skickar även ett mail om "onormalt" beteende uppstår baserat på regler ------ #
+# - Skickar även ett mail om loggar matcher regler beteende uppstår baserat på regler  #
 # ------------------ Måste som köras administratör och kräver pywin32 ---------------- #
 # ------------------------------------------------------------------------------------ # 
 #  ------------------------## Skriven av Nicolas.H ##--------------------------------- #
 # ==================================================================================== #
           
 
-            # ------------- OS Check --------------- #
+            
 from datetime import datetime
 import sys
 
-                # -------- Variable/Functions ---------- #
+            # ---------- Variable ------------------ #
 today_date = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
 
+
+            # ------------- OS Check --------------- #
 if sys.platform == "win32":
 
 
@@ -28,7 +30,7 @@ if sys.platform == "win32":
     from email.mime.text import MIMEText
 
 
-                ## --Email config-- ##
+            # ------------- Email config ----------- #
     def mail_func():                                                                                            
         sender_email = "mailscriptcs25@gmail.com"                                                               # Hårdkodad avsändar email adress 
         receiver_mail = "mailscriptcs25@gmail.com"                                                              # Hårdkodad mottagar email adress
@@ -43,7 +45,7 @@ if sys.platform == "win32":
             server.login(sender_email, password)                                                                # Loggar in på avsändar email adressen              
             server.send_message(message)                                                                        # Skickar mailet till mottagaren             
 
-                ## --Error Logging-- ##
+            # ----------- Error Logging ----------- #
     def error_log():                                                                                            #
         print(error)                                                                                            # Skriver ut error meddelandet i console                                    
         with open("Logs.txt","a") as file:                                                                      # Öppnar loggfilen i append läge   
@@ -51,12 +53,12 @@ if sys.platform == "win32":
         sys.exit() 
 
 
-                # ------- Script Start Message --------- #
+            # ------- Script Start Message --------- #
     print("=" * 25 + "Windows Security Log Scanner" + "=" * 25)
     with open("Logs.txt","a") as file:
         file.write(f"\n[{today_date}] Script was Initialized")
 
-                # ---------- Menu Creation ------------- #
+            # ---------- Menu Creation ------------- #
     while True:                                                                             # Kollar om OS är Windows
         menu_option = input("What would you like to do today? \n1. Perform Security log scan\n2. Help page\n3. Version\n4. Quit\n") #   Tar in användarens menyval
         with open("Logs.txt", "a") as file:                                                                 # Öppnar loggfilen i append läge                                    
@@ -141,8 +143,7 @@ if sys.platform == "win32":
                 file.write(f"\n[{today_date}] Incorrect menu choice")
             continue
                 
-                # ------ Incorrect OS ------- #
-
+            # ------ Incorrect OS ------- #
 
 else:
     print("=" * 25 +"Operative system is not Windows" + 25 * "=")
