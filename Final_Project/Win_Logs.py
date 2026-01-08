@@ -112,17 +112,17 @@ if sys.platform == "win32":
                     error_log()
                 
             # ------- Help Page --------- #
-        elif menu_option == "2":
-            try:
-                print("=" * 25 + " Help page " + 25 * "=")
-                with open("Help_Page.txt","r", encoding ="UTF-8") as file:
-                    for line in file:
-                        print(line.strip())
-                print("=" * 25 + " Help page " + 25 * "=")
-                with open("Logs.txt","a") as file:
-                    file.write(f"\n[{today_date}] User accessed help page")
-            except Exception as error:
-                error_log()
+        elif menu_option == "2":                                                                            # Meny val 2 hjälp sida                                                                   
+            try:                                                                                            #
+                print("=" * 25 + " Help page " + 25 * "=")                                                  # Printar Header för hjälp sida                
+                with open("Help_Page.txt","r", encoding ="UTF-8") as file:                                  # Öpnnar hjälp sida text filen 
+                    for line in file:                                                                       # Läser alla rader i hjälp filen rad för rad
+                        print(line.strip())                                                                 # Skriver ut rad för rad              
+                print("=" * 25 + " Help page " + 25 * "=")                                                  # Tail för hjälp sidan       
+                with open("Logs.txt","a") as file:                                                          #    
+                    file.write(f"\n[{today_date}] User accessed help page")                                 #        
+            except Exception as error:                                                                      #    
+                error_log()                                                                                 #        
             
             # ------ Version Page ------- #
         elif menu_option == "3":
