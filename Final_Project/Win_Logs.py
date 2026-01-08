@@ -2,7 +2,7 @@
 # --------------------------------- Win_logs.py -------------------------------------- #
 # ------------------------------------------------------------------------------------ #
 # --  Script för att läsa och filtrera windows säkerhetsloggar med hjälp av pywin32 -- #
-# -----  Skickar även ett mail om "onormalt" beteende uppstår baserat på regler ------ #
+# - Skickar även ett mail om loggar matcher regler beteende uppstår baserat på regler  #
 # ------------------ Måste som köras administratör och kräver pywin32 ---------------- #
 # ------------------------------------------------------------------------------------ # 
 #  ------------------------## Skriven av Nicolas.H ##--------------------------------- #
