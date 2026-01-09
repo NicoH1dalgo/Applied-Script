@@ -7,7 +7,7 @@
 # ------------------------------------------------------------------------------------ # 
 #  ------------------------## Skriven av Nicolas.H ##--------------------------------- #
 # ==================================================================================== #
-          
+# Hej vad fint du gör! /Simon          
 
             # ------------- OS Check --------------- #
 from datetime import datetime
@@ -82,15 +82,15 @@ if sys.platform == "win32":
                 sec_records.extend(sec_logs)                                                                # lägger till de lästa loggarna i listan all_records
 
             evt_id = [sec_logs.EventID & 0xFFFF for sec_logs in sec_records]                                # Skapar en lista med endast event ID från alla loggar och grupperar dem baserat på ID
-            for event,group in groupby(evt_id):                                                             # 
+            for event, group in groupby(evt_id):                                                             # 
                 try:
                     if event == 4625:                                                                       # Kollar om event ID är 4625 och räknar antalet misslyckade inloggningsförsök
                         fail_log = sum(1 for _ in group)                                                    # 
                         if fail_log >= 5:                                                                   # om misslyckade inloggningsförsök är större än 5 så skicka mail AKA alert
                             
                             # ------- Create Email Content --------- #
-                            subject = f" !! Event ID : {event} Multiple Failed logon attempts! *HIGH* !! "  # Sätter ämnet för mailet
-                            body =  "Irregular activity has been detected investigate promptly!"            # Sätter body för mailet
+                            subject = (f" !! Event ID : {event} Multiple Failed logon attempts! *HIGH* !! ")  # Sätter ämnet för mailet
+                            body =  ("Irregular activity has been detected investigate promptly!")           # Sätter body för mailet
                             mail_func()                                                                     # Kör mail funktionen                           
                             print(subject)                                                                  # Skriver ut ämnet i console          
                             with open("Logs.txt", "a") as file:                                             # Loggar händelsen i loggfilen     
